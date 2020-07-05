@@ -1,8 +1,6 @@
 //Connecting to socket
 const socket = io('https://javascript-homework-backend.herokuapp.com/');
 
-// const socket = io('localhost:3000');
-console.log(socket);
 socket.on('connect', () => {
     let page = 1;
     let sorted = [];
