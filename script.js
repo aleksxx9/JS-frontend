@@ -43,7 +43,6 @@ socket.on('connect', () => {
 
     //Checking and loading new data to arrays
     socket.on('picture', json => {
-        console.log('pic');
         json.map(pic => {
             unsorted.push(pic);
             sorted.push(pic);
